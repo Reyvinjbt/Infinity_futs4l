@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infinity Futsal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- TOPBAR -->
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <div class="brand" aria-hidden="true">
+        <!-- Logo textual / CSS-only -->
+        <div class="brand-logo" title="Infinity Futsal">∞</div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Menú principal">
+        <a class="nav-link" href="#equipo">Equipo</a>
+        <a class="nav-link" href="#tecnico">Técnico</a>
+        <a class="nav-link" href="#partidos-vuelta-1">Partidos Vuelta 1</a>
+        <a class="nav-link" href="#partidos-vuelta-2">Partidos Vuelta 2</a>
+        <a class="nav-link" href="#estadisticas">Estadísticas</a>
+        <a class="nav-link" href="#goles">Goles</a>
+        <a class="nav-link" href="#redes">Redes</a>
+      </nav>
+
+      <div class="nav-spacer" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero" role="main">
+    <div class="hero-inner">
+      <!-- CSS-only "logo" -->
+      <div class="team-logo" aria-hidden="true">INFINITY</div>
+
+      <h1 class="title">INFINITY FUTSAL</h1>
+      <p class="tagline">Más que un equipo, somos una familia.</p>
+
+      <div class="count-wrap" aria-live="polite">
+        <div id="count-pill" class="count-pill" role="status" aria-atomic="true">
+          <span class="icon" aria-hidden="true">
+            <!-- icono reloj (SVG inline - not external file) -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 2h12" stroke="#F5C23A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 22h12" stroke="#F5C23A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 6h8" stroke="#F5C23A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 18h8" stroke="#F5C23A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 8v3" stroke="#F5C23A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 13v3" stroke="#F5C23A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
+          <span id="pill-text" class="pill-text">-- DÍAS --:--:-- para el próximo partido</span>
+        </div>
+      </div>
+
+      <p class="next-match">Próximo partido: <strong>22 de Septiembre de 2026</strong></p>
+
+      <a class="scroll-hint" href="#equipo" aria-hidden="true">⌄</a>
+    </div>
+  </main>
+
+  <!-- CONTENT -->
+  <div id="content" class="content" tabindex="-1">
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="section section-dark" aria-labelledby="equipo-title">
+      <h2 id="equipo-title" class="section-title">Jugadores</h2>
+      <div class="players-grid">
+        <article class="player-card"><span class="p-num">#5</span><span class="p-name">Keneth Centeno</span></article>
+        <article class="player-card"><span class="p-num">#8</span><span class="p-name">Jeferson Palacios</span></article>
+        <article class="player-card"><span class="p-num">#10</span><span class="p-name">Yasmir Blandon</span></article>
+        <article class="player-card"><span class="p-num">#11</span><span class="p-name">Salvador Aleman</span></article>
+
+        <article class="player-card"><span class="p-num">#12</span><span class="p-name">Reyvin Blandón</span></article>
+        <article class="player-card"><span class="p-num">#14</span><span class="p-name">Joab Treminio</span></article>
+        <article class="player-card"><span class="p-num">#16</span><span class="p-name">Jorge Zamora</span></article>
+        <article class="player-card"><span class="p-num">#17</span><span class="p-name">Fernando Ballesteros</span></article>
+
+        <article class="player-card"><span class="p-num">#19</span><span class="p-name">Moisés Maldonado</span></article>
+        <article class="player-card"><span class="p-num">#25</span><span class="p-name">Moisés Rayo</span></article>
+        <article class="player-card"><span class="p-num">#95</span><span class="p-name">Cristopher Mora</span></article>
+        <article class="player-card"><span class="p-num">#96</span><span class="p-name">Jerling Rostrán</span></article>
+      </div>
+    </section>
+
+    <!-- TÉCNICO -->
+    <section id="tecnico" class="section section-panel" aria-labelledby="tecnico-title">
+      <h2 id="tecnico-title" class="section-title">Cuerpo Técnico</h2>
+      <div class="card">
+        <p><strong>Director Técnico:</strong> #80 Jader Maldonado</p>
+        <p><strong>Directora chancuer:</strong> #0 Ana Travers</p>
+        <p><strong>Representantes:</strong> #1 Jasari Tinoco y #22 Daniela Huerta</p>
+      </div>
+    </section>
+
+    <!-- PARTIDOS VUELTA 1 -->
+    <section id="partidos-vuelta-1" class="section section-dark" aria-labelledby="partidos-vuelta-1-title">
+      <h2 id="partidos-vuelta-1-title" class="section-title">Partidos vuelta 1</h2>
+
+      <div class="match-panel" role="list" aria-label="Lista de partidos">
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">21 de julio de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>5</strong> vs <strong>1</strong> FC Santana</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">24 de julio de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>4</strong> vs <strong>3</strong> Real Totolate</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">28 de julio de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status draw">[E]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>2</strong> vs <strong>2</strong> Fanor Jaenz</span>
+            </div>
+            <div class="mi-sub">Empate</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">31 de julio de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status loss">[P]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>1</strong> vs <strong>2</strong> Sport RD</span>
+            </div>
+            <div class="mi-sub">Derrota</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">04 de agosto de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status draw">[E]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>1</strong> vs <strong>1</strong> Soberanos FC</span>
+            </div>
+            <div class="mi-sub">Empate</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">07 de agosto de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>6</strong> vs <strong>0</strong> United FC</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">11 de agosto de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>4</strong> vs <strong>3</strong> Olimpia FC</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">18 de agosto de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>5</strong> vs <strong>1</strong> Corintia FC</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">25 de agosto de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status loss">[P]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Infinity Futsal <strong>2</strong> vs <strong>4</strong> Hard Seltzer</span>
+            </div>
+            <div class="mi-sub">Derrota</div>
+          </div>
+        </article>
+
+        <p class="match-panel-foot">Cancha: <strong>Punta de plancha</strong></p>
+      </div>
+    </section>
+
+    <!-- PARTIDOS VUELTA 2 -->
+    <section id="partidos-vuelta-2" class="section section-dark" aria-labelledby="partidos-vuelta-2-title">
+      <h2 id="partidos-vuelta-2-title" class="section-title">Partidos vuelta 2</h2>
+
+      <div class="match-panel" role="list" aria-label="Lista de partidos">
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">1 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">FC Santana <strong>0</strong> vs <strong>3</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">4 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status loss">[P]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Fanor Jaenz <strong>3</strong> vs <strong>0</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Reclamo</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">8 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">United FC <strong>1</strong> vs <strong>5</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">11 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status loss">[P]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Sport RD <strong>5</strong> vs <strong>1</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Derrota</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">18 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status win">[W]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">Corintia FC <strong>3</strong> vs <strong>4</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Victoria</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">22 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status pending">[?]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">? <strong>?</strong> vs <strong>?</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Pendiente</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">25 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status pending">[?]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">? <strong>?</strong> vs <strong>?</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Pendiente</div>
+          </div>
+        </article>
+
+        <article class="match-item" role="listitem">
+          <div class="mi-icon" aria-hidden="true"><span class="cal-icon">📅</span></div>
+          <div class="mi-body">
+            <div class="mi-top">
+              <time class="mi-date">29 de Septiembre de 2026</time>
+              <span class="mi-sep">—</span>
+              <span class="status pending">[?]</span>
+              <span class="mi-sep">—</span>
+              <span class="mi-match">? <strong>?</strong> vs <strong>?</strong> Infinity Futsal</span>
+            </div>
+            <div class="mi-sub">Pendiente</div>
+          </div>
+        </article>
+
+        <p class="match-panel-foot">Cancha: <strong>Punta de plancha</strong></p>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section id="estadisticas" class="section section-panel" aria-labelledby="estadisticas-title">
+      <h2 id="estadisticas-title" class="section-title">Estadísticas — Rendimiento temporada 2026</h2>
+
+      <div class="stats-cards">
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-neutral">⚽</div>
+          <div class="stat-value">14</div>
+          <div class="stat-label">Partidos</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-win">🏆</div>
+          <div class="stat-value">8</div>
+          <div class="stat-label">Victorias</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-draw">🔁</div>
+          <div class="stat-value">2</div>
+          <div class="stat-label">Empates</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-loss">❌</div>
+          <div class="stat-value">4</div>
+          <div class="stat-label">Derrotas</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-fire">🔥</div>
+          <div class="stat-value">43</div>
+          <div class="stat-label">Goles a Favor<br><small>Promedio: 3.07 por partido</small></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-shield">🛡️</div>
+          <div class="stat-value">28</div>
+          <div class="stat-label">Goles en Contra<br><small>Promedio: 2.00 por partido</small></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-diff">⇅</div>
+          <div class="stat-value">+15</div>
+          <div class="stat-label">Diferencia</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-points">⏱️</div>
+          <div class="stat-value">26</div>
+          <div class="stat-label">Puntos<br><small>57.1% victorias</small></div>
+        </div>
+      </div>
+
+      <div class="stats-panels">
+        <div class="panel distribution">
+          <h3>Distribución de Resultados</h3>
+          <ul class="dist-list">
+            <li>
+              <div class="dist-row">
+                <div class="dist-label"><span class="dot win"></span> Victorias</div>
+                <div class="dist-value">8 (57.1%)</div>
+              </div>
+              <div class="progress"><div class="fill win" style="width:57.1%"></div></div>
+            </li>
+
+            <li>
+              <div class="dist-row">
+                <div class="dist-label"><span class="dot draw"></span> Empates</div>
+                <div class="dist-value">2 (14.3%)</div>
+              </div>
+              <div class="progress"><div class="fill draw" style="width:14.3%"></div></div>
+            </li>
+
+            <li>
+              <div class="dist-row">
+                <div class="dist-label"><span class="dot loss"></span> Derrotas</div>
+                <div class="dist-value">4 (28.6%)</div>
+              </div>
+              <div class="progress"><div class="fill loss" style="width:28.6%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel offense">
+          <h3>Rendimiento Ofensivo</h3>
+
+          <div class="off-row">
+            <div class="off-label">Goles Marcados</div>
+            <div class="off-value">43</div>
+          </div>
+          <div class="progress"><div class="fill offense" style="width:100%"></div></div>
+
+          <div class="off-row">
+            <div class="off-label">Goleadores Registrados</div>
+            <div class="off-value">43</div>
+          </div>
+          <div class="progress"><div class="fill white" style="width:100%"></div></div>
+
+          <div class="off-row">
+            <div class="off-label">Porterías a Cero</div>
+            <div class="off-value">2</div>
+          </div>
+          <div class="progress"><div class="fill win" style="width:10%"></div></div>
+
+          <div class="off-note">Mayor victoria: <strong>Infinity Futsal 6 - 0 United FC (07 de agosto de 2026)</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOLES -->
+    <section id="goles" class="section section-dark" aria-labelledby="goles-title">
+      <div class="recent-badges" aria-hidden="true">
+        <span class="badge win">✔ W <strong>5-1</strong></span>
+        <span class="badge win">✔ W <strong>4-3</strong></span>
+        <span class="badge draw">– E <strong>2-2</strong></span>
+        <span class="badge loss">✖ P <strong>1-2</strong></span>
+        <span class="badge draw">– E <strong>1-1</strong></span>
+        <span class="badge win">✔ W <strong>6-0</strong></span>
+        <span class="badge win">✔ W <strong>4-3</strong></span>
+        <span class="badge win">✔ W <strong>5-1</strong></span>
+        <span class="badge loss">✖ P <strong>2-4</strong></span>
+
+        <span class="badge win">✔ W <strong>0-3</strong></span>
+        <span class="badge loss">✖ P <strong>3-0</strong></span>
+        <span class="badge win">✔ W <strong>1-5</strong></span>
+        <span class="badge loss">✖ P <strong>5-1</strong></span>
+        <span class="badge win">✔ W <strong>3-4</strong></span>
+        <span class="badge pending">? <strong>?-?</strong></span>
+        <span class="badge pending">? <strong>?-?</strong></span>
+        <span class="badge pending">? <strong>?-?</strong></span>
+        <span class="badge pending">? <strong>?-?</strong></span>
+      </div>
+
+      <h2 id="goles-title" class="section-title">Goles</h2>
+
+      <div class="goals-list" role="list" aria-label="Lista de goleadores">
+        <div class="goal-item" data-goals="13" role="listitem">
+          <div class="goal-left">
+            <span class="rank">1</span>
+            <span class="player">Jorge Zamora</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">13</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="9" role="listitem">
+          <div class="goal-left">
+            <span class="rank">2</span>
+            <span class="player">Cristopher Mora</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">9</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="8" role="listitem">
+          <div class="goal-left">
+            <span class="rank">3</span>
+            <span class="player">Jerling Rostrán</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">8</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="4" role="listitem">
+          <div class="goal-left">
+            <span class="rank">4</span>
+            <span class="player">Fernando Ballesteros</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">4</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="3" role="listitem">
+          <div class="goal-left">
+            <span class="rank">5</span>
+            <span class="player">Jeferson Palacios</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">3</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="3" role="listitem">
+          <div class="goal-left">
+            <span class="rank">6</span>
+            <span class="player">Reyvin Blandón</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">3</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="2" role="listitem">
+          <div class="goal-left">
+            <span class="rank">7</span>
+            <span class="player">Joab Treminio</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">2</span></div>
+        </div>
+
+        <div class="goal-item" data-goals="1" role="listitem">
+          <div class="goal-left">
+            <span class="rank">8</span>
+            <span class="player">Moisés Maldonado</span>
+          </div>
+          <div class="goal-mid">
+            <div class="bar-bg"><div class="goal-bar" aria-hidden="true"></div></div>
+          </div>
+          <div class="goal-right"><span class="goal-count">1</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section id="redes" class="section section-dark" aria-labelledby="redes-title">
+      <h2 id="redes-title" class="section-title">Redes Sociales</h2>
+      <div class="card">
+        Instagram: <a href="https://www.instagram.com/infinity_futs4l" target="_blank" rel="noopener noreferrer">@Infinity_futs4l</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- BOTTOM BAR (CSS-only logo) -->
+  <footer class="bottom-bar" role="contentinfo">
+    <div class="bar-logo" aria-hidden="true">∞</div>
+    <div class="bar-text">INFINITY FUTSAL — © 2026 — @Infinity_futs4l</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
