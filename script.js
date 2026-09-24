@@ -2,7 +2,7 @@
 // + inicialización de barras de "Goles" (se calculan según data-goals)
 (function(){
   // --- Contador ---
-  const matchDate = new Date('2026-09-22T14:20:00'); // ajustar si se desea
+  const matchDate = new Date('2026-09-25T14:20:00'); // ajustar si se desea
   const pillText = document.getElementById('pill-text');
   const nextMatchText = document.querySelector('.next-match');
   const countPill = document.getElementById('count-pill');
@@ -27,7 +27,7 @@
     const seconds = Math.floor(diff / 1000);
 
     if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para el próximo partido`;
-    if(nextMatchText) nextMatchText.innerHTML = 'Próximo partido: <strong>22 de septiembre de 2026</strong>';
+    if(nextMatchText) nextMatchText.innerHTML = 'Próximo partido: <strong>25 de septiembre de 2026</strong>';
     if(countPill) countPill.classList.add('active');
   }
   updateCountdown();
