@@ -2,7 +2,7 @@
 // + inicialización de barras de "Goles" (se calculan según data-goals)
 (function(){
   // --- Contador ---
-  const matchDate = new Date('2026-10-02T14:20:00'); // ajustar si se desea
+  const matchDate = new Date('2026-10-02T14:20:00'); // Partido de ida vs Olimpia FC
   const pillText = document.getElementById('pill-text');
   const nextMatchText = document.querySelector('.next-match');
   const countPill = document.getElementById('count-pill');
@@ -13,7 +13,7 @@
     const now = new Date();
     let diff = matchDate - now;
     if (diff <= 0){
-      if(pillText) pillText.textContent = '0 DÍAS 00:00:00 para el próximo partido';
+      if(pillText) pillText.textContent = '0 DÍAS 00:00:00 para el primer partido de eliminatorias';
       if(nextMatchText) nextMatchText.textContent = 'Próximo partido: Día del partido';
       if(countPill) countPill.classList.remove('active');
       return;
@@ -26,7 +26,7 @@
     diff -= minutes * (1000*60);
     const seconds = Math.floor(diff / 1000);
 
-    if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para el próximo partido`;
+    if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para el primer partido de eliminatorias`;
     if(nextMatchText) nextMatchText.innerHTML = 'Próximo partido: <strong>02 de Octubre de 2026</strong>';
     if(countPill) countPill.classList.add('active');
   }
