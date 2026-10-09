@@ -1,5 +1,5 @@
 (function(){
-  const matchDate = new Date('2026-10-06T15:40:00');
+  const matchDate = new Date('2026-10-09T15:40:00');
   const pillText = document.getElementById('pill-text');
   const nextMatchText = document.querySelector('.next-match');
   const countPill = document.getElementById('count-pill');
@@ -28,8 +28,8 @@
 
     const seconds = Math.floor(diff / 1000);
 
-    if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para el primer partido de eliminatorias`;
-    if(nextMatchText) nextMatchText.innerHTML = 'Próximo partido: <strong>06 de Octubre de 2026</strong>';
+    if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para el partido de vuelta de Cuartos de Final`;
+    if(nextMatchText) nextMatchText.innerHTML = 'Próximo partido: <strong>09 de Octubre de 2026</strong>';
     if(countPill) countPill.classList.add('active');
   }
 
