@@ -5,14 +5,13 @@
   --panel-2:#0f171f;
   --muted:#a6afba;
   --accent:#f5c242;
-  --accent-2:#f0a31c;
   --white:#f5f7f8;
   --win:#2ec27e;
   --draw:#f6b93b;
   --loss:#ff5d5d;
   --line: rgba(255,255,255,0.06);
-  --shadow: rgba(0, 0, 0, 0.45);
-  --card-shadow: 0 16px 38px rgba(0, 0, 0, 0.38);
+  --shadow: rgba(0,0,0,0.45);
+  --card-shadow: 0 16px 38px rgba(0,0,0,0.38);
   --glow: 0 0 20px rgba(245, 194, 66, 0.2);
   font-family:"Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color-scheme: dark;
@@ -54,7 +53,6 @@ strong{font-weight:700}
   gap:24px;
   padding:0 28px;
 }
-.brand{display:flex;align-items:center}
 .brand-logo{
   width:42px; height:42px;
   border-radius:12px;
@@ -137,7 +135,6 @@ strong{font-weight:700}
   font-size:1.1rem;
   margin:0 0 26px;
 }
-
 .cta-row{
   display:flex;
   gap:14px;
@@ -440,92 +437,6 @@ strong{font-weight:700}
   font-style:italic;
   font-size:0.95rem;
 }
-
-.resumen-grid{
-  display:grid;
-  grid-template-columns:repeat(3, minmax(0,1fr));
-  gap:20px;
-  margin-bottom:22px;
-}
-.resumen-card{
-  background:linear-gradient(180deg, rgba(255,255,255,0.028), rgba(255,255,255,0.012));
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:22px 18px;
-  box-shadow:var(--card-shadow);
-}
-.resumen-card h3{
-  margin:0 0 12px;
-  font-size:1.1rem;
-  color:var(--white);
-}
-.resumen-stats{
-  display:flex; flex-direction:column;
-  gap:8px;
-  color:var(--muted);
-}
-.resumen-stats p{
-  margin:0;
-  line-height:1.5;
-}
-.resumen-card.highlight{
-  background:
-    linear-gradient(180deg, rgba(245,194,66,0.08), rgba(245,194,66,0.02)),
-    linear-gradient(180deg, rgba(255,255,255,0.028), rgba(255,255,255,0.012));
-  border-color: rgba(245,194,66,0.2);
-}
-.badge-w,.badge-e,.badge-p{
-  display:inline-block;
-  padding:3px 7px;
-  border-radius:7px;
-  font-weight:700;
-  font-size:0.72rem;
-}
-.badge-w{
-  background:rgba(46,194,126,0.12);
-  color:var(--win);
-}
-.badge-e{
-  background:rgba(246,185,59,0.12);
-  color:var(--draw);
-}
-.badge-p{
-  background:rgba(255,93,93,0.12);
-  color:var(--loss);
-}
-.resumen-note{
-  color:var(--accent);
-  font-weight:700;
-}
-.resumen-achievements{
-  padding:22px 20px;
-  border-radius:18px;
-  border:1px solid var(--line);
-  background:linear-gradient(180deg, rgba(255,255,255,0.024), rgba(255,255,255,0.012));
-}
-.resumen-achievements h3{
-  margin:0 0 16px;
-  color:var(--white);
-}
-.resumen-achievements ul{
-  list-style:none;
-  margin:0; padding:0;
-  display:flex; flex-direction:column; gap:10px;
-}
-.resumen-achievements li{
-  color:var(--muted);
-  position:relative;
-  padding-left:18px;
-}
-.resumen-achievements li::before{
-  content:"";
-  position:absolute;
-  left:0; top:9px;
-  width:6px; height:6px;
-  border-radius:50%;
-  background:var(--accent);
-}
-
 .stats-cards{
   display:grid;
   grid-template-columns:repeat(4, minmax(0,1fr));
@@ -630,44 +541,6 @@ strong{font-weight:700}
   line-height:1.5;
 }
 
-.recent-badges{
-  display:flex;
-  gap:12px;
-  overflow-x:auto;
-  max-width:920px;
-  margin:12px auto 8px;
-  padding:10px 14px;
-  border-radius:12px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.012));
-  border:1px solid var(--line);
-}
-.recent-badges .badge{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:6px 10px;
-  border-radius:10px;
-  white-space:nowrap;
-  font-size:0.76rem;
-  font-weight:700;
-}
-.recent-badges .badge.win{
-  background:rgba(46,194,126,0.12);
-  color:var(--win);
-}
-.recent-badges .badge.draw{
-  background:rgba(246,185,59,0.12);
-  color:var(--draw);
-}
-.recent-badges .badge.loss{
-  background:rgba(255,93,93,0.12);
-  color:var(--loss);
-}
-.recent-badges .badge.pending{
-  background:rgba(255,255,255,0.04);
-  color:var(--muted);
-}
-
 .goals-list{
   max-width:920px;
   margin:26px auto 0;
@@ -723,12 +596,10 @@ strong{font-weight:700}
   min-width:32px;
   font-weight:800;
 }
-
 #goles-playoffs{
   background: linear-gradient(180deg, rgba(245,194,66,0.06), transparent);
   padding-bottom: 60px;
 }
-
 .social-card{
   max-width:420px;
   margin:0 auto;
@@ -772,7 +643,6 @@ strong{font-weight:700}
 @media (max-width: 1200px){
   .players-grid{grid-template-columns:repeat(3, minmax(0,1fr))}
   .stats-cards{grid-template-columns:repeat(3, minmax(0,1fr))}
-  .resumen-grid{grid-template-columns:1fr}
   .playoff-matches{grid-template-columns:1fr}
 }
 @media (max-width: 900px){
