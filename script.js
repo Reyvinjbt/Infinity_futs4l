@@ -1,5 +1,5 @@
 (function(){
-  const matchDate = new Date('2026-10-12T14:20:00');
+  const matchDate = new Date('2026-10-13T14:20:00');
   const pillText = document.getElementById('pill-text');
   const nextMatchText = document.querySelector('.next-match');
   const countPill = document.getElementById('count-pill');
