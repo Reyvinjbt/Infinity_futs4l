@@ -418,6 +418,28 @@ strong{font-weight:700}
 }
 .vs{color:var(--accent); font-weight:800}
 .pcard-location{font-size:0.9rem}
+.pcard-score{
+  font-size:1.8rem;
+  font-weight:800;
+  color:var(--accent);
+  display:inline-block;
+  margin:0 4px;
+}
+.playoff-card-single{
+  max-width:880px;
+  margin:0 auto;
+  background:linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.012));
+  border:1px solid var(--line);
+  border-radius:18px;
+  box-shadow:var(--card-shadow);
+  padding:22px 20px;
+}
+.pcard-note{
+  margin-top:14px;
+  color:var(--muted);
+  font-style:italic;
+  font-size:0.95rem;
+}
 
 .resumen-grid{
   display:grid;
@@ -700,6 +722,11 @@ strong{font-weight:700}
   display:inline-block;
   min-width:32px;
   font-weight:800;
+}
+
+#goles-playoffs{
+  background: linear-gradient(180deg, rgba(245,194,66,0.06), transparent);
+  padding-bottom: 60px;
 }
 
 .social-card{
