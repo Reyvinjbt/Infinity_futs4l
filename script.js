@@ -11,8 +11,8 @@
     let diff = matchDate - now;
 
     if (diff <= 0){
-      if(pillText) pillText.textContent = '0 DÍAS 00:00:00 para la vuelta';
-      if(nextMatchText) nextMatchText.textContent = 'Próximo partido: Partido de vuelta';
+      if(pillText) pillText.textContent = '0 DÍAS 00:00:00 para la próxima temporada';
+      if(nextMatchText) nextMatchText.textContent = 'Próximo capítulo: Coming Soon';
       if(countPill) countPill.classList.remove('active');
       return;
     }
@@ -28,8 +28,8 @@
 
     const seconds = Math.floor(diff / 1000);
 
-    if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para la vuelta`;
-    if(nextMatchText) nextMatchText.innerHTML = 'Próximo partido: <strong>Sport RD vs Infinity Futsal</strong>';
+    if(pillText) pillText.textContent = `${days} DÍAS ${pad(hours)}:${pad(minutes)}:${pad(seconds)} para la próxima temporada`;
+    if(nextMatchText) nextMatchText.innerHTML = 'Próximo capítulo: <strong>Coming Soon</strong>';
     if(countPill) countPill.classList.add('active');
   }
 
